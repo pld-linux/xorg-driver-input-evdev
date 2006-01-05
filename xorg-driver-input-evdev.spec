@@ -1,12 +1,12 @@
 Summary:	X.org input driver for evdev devices
 Summary(pl):	Sterownik wej¶ciowy X.org dla urz±dzeñ evdev
 Name:		xorg-driver-input-evdev
-Version:	1.0.0.3
+Version:	1.0.0.5
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC3/driver/xf86-input-evdev-%{version}.tar.bz2
-# Source0-md5:	c406fbaf6fcf37b5e78d9d43290a8c67
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/driver/xf86-input-evdev-%{version}.tar.bz2
+# Source0-md5:	70a3b3e8416e3fd536c8894511f13a67
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -51,6 +51,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog
+%doc COPYING ChangeLog
 %attr(755,root,root) %{_libdir}/xorg/modules/input/evdev_drv.so
 #%{_mandir}/man4/evdev.4*
