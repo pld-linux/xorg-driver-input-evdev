@@ -15,8 +15,8 @@ BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-proto-inputproto-devel
 BuildRequires:	xorg-proto-kbproto-devel
 BuildRequires:	xorg-util-util-macros >= 0.99.2
-BuildRequires:	xorg-xserver-server-devel >= 1.2.99.0
-Requires:	xorg-xserver-server >= 1.2.99.0
+BuildRequires:	xorg-xserver-server-devel >= 1.1.0
+Requires:	xorg-xserver-server >= 1.1.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
