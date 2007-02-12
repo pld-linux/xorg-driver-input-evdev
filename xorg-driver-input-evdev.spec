@@ -1,5 +1,5 @@
 Summary:	X.org input driver for Linux generic event devices
-Summary(pl.UTF-8):   Sterownik wejściowy X.org dla ogólnych urządzeń linuksowych generujących zdarzenia
+Summary(pl.UTF-8):	Sterownik wejściowy X.org dla ogólnych urządzeń linuksowych generujących zdarzenia
 Name:		xorg-driver-input-evdev
 Version:	1.1.5
 Release:	1
