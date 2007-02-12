@@ -1,5 +1,5 @@
 Summary:	X.org input driver for Linux generic event devices
-Summary(pl):	Sterownik wej¶ciowy X.org dla ogólnych urz±dzeñ linuksowych generuj±cych zdarzenia
+Summary(pl.UTF-8):   Sterownik wejÅ›ciowy X.org dla ogÃ³lnych urzÄ…dzeÅ„ linuksowych generujÄ…cych zdarzenia
 Name:		xorg-driver-input-evdev
 Version:	1.1.5
 Release:	1
@@ -24,10 +24,10 @@ X.org input driver for Linux generic event devices. It supports all
 input devices that the kernel knows about, including most mice and
 keyboards.
 
-%description -l pl
-Sterownik wej¶ciowy X.org dla ogólnych urz±dzeñ linuksowych
-generuj±cych zdarzenia. Obs³uguje wszystkie urz±dzenia wej¶ciowe znane
-przez j±dro, w tym wiêkszo¶æ myszy i klawiatur.
+%description -l pl.UTF-8
+Sterownik wejÅ›ciowy X.org dla ogÃ³lnych urzÄ…dzeÅ„ linuksowych
+generujÄ…cych zdarzenia. ObsÅ‚uguje wszystkie urzÄ…dzenia wejÅ›ciowe znane
+przez jÄ…dro, w tym wiÄ™kszoÅ›Ä‡ myszy i klawiatur.
 
 %prep
 %setup -q -n xf86-input-evdev-%{version}
