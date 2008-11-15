@@ -32,11 +32,15 @@ generujących zdarzenia. Obsługuje wszystkie urządzenia wejściowe znane
 przez jądro, w tym większość myszy i klawiatur.
 
 %package devel
-Summary:	Header files and develpment documentation for evdev driver
+Summary:	Header file for evdev driver
+Summary(pl.UTF-8):	Plik nagłówkowy sterownika evdev
 Group:		Development/Libraries
 
 %description devel
-Header files and develpment documentation for evdev driver.
+Header file for evdev driver.
+
+%description devel -l pl.UTF-8
+Plik nagłówkowy sterownika evdev.
 
 %prep
 %setup -q -n xf86-input-evdev-%{version}
@@ -71,5 +75,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%{_includedir}/xorg/evdev*.h
-%{_pkgconfigdir}/*.pc
+%{_includedir}/xorg/evdev-properties.h
+%{_pkgconfigdir}/xorg-evdev.pc
