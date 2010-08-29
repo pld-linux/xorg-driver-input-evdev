@@ -17,7 +17,7 @@ BuildRequires:	xorg-proto-inputproto-devel
 BuildRequires:	xorg-proto-kbproto-devel
 BuildRequires:	xorg-util-util-macros >= 1.8
 BuildRequires:	xorg-xserver-server-devel >= 1.5.3
-%requires_xorg_xserver_xinput
+%{?requires_xorg_xserver_xinput}
 Requires:	xorg-xserver-server >= 1.5.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
