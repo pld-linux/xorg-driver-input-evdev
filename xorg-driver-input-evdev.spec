@@ -2,12 +2,11 @@ Summary:	X.org input driver for Linux generic event devices
 Summary(pl.UTF-8):	Sterownik wejściowy X.org dla ogólnych urządzeń linuksowych generujących zdarzenia
 Name:		xorg-driver-input-evdev
 Version:	2.10.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-input-evdev-%{version}.tar.bz2
 # Source0-md5:	b1183c55125981d346102d1be704760b
-Source1:	evdev.conf
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
@@ -66,9 +65,6 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT/etc/X11/xorg.conf.d
-cp -p %{SOURCE1}  $RPM_BUILD_ROOT/etc/X11/xorg.conf.d/10-evdev.conf
-
 %{__rm} $RPM_BUILD_ROOT%{_libdir}/xorg/modules/*/*.la
 
 %clean
@@ -77,10 +73,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc COPYING ChangeLog README
-%config(noreplace) %verify(not md5 mtime size) /etc/X11/xorg.conf.d/10-evdev.conf
 %attr(755,root,root) %{_libdir}/xorg/modules/input/evdev_drv.so
-# currently in xorg-server (as of 1.17.4); enable after removing from server
-#%{_datadir}/X11/xorg.conf.d/10-evdev.conf
+%{_datadir}/X11/xorg.conf.d/10-evdev.conf
 %{_mandir}/man4/evdev.4*
 
 %files devel
