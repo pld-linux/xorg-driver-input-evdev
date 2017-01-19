@@ -1,12 +1,12 @@
 Summary:	X.org input driver for Linux generic event devices
 Summary(pl.UTF-8):	Sterownik wejściowy X.org dla ogólnych urządzeń linuksowych generujących zdarzenia
 Name:		xorg-driver-input-evdev
-Version:	2.10.4
-Release:	2
+Version:	2.10.5
+Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	https://xorg.freedesktop.org/releases/individual/driver/xf86-input-evdev-%{version}.tar.bz2
-# Source0-md5:	0f209d13b39427c1a6d38d70059b1e8f
+# Source0-md5:	94c2c8354c74ab1cfbbb0a222078b9c6
 URL:		https://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
@@ -18,6 +18,7 @@ BuildRequires:	rpmbuild(macros) >= 1.389
 BuildRequires:	udev-devel
 BuildRequires:	xorg-proto-inputproto-devel >= 2.2
 BuildRequires:	xorg-proto-kbproto-devel
+BuildRequires:	xorg-proto-xproto-devel
 BuildRequires:	xorg-util-util-macros >= 1.8
 BuildRequires:	xorg-xserver-server-devel >= 1.12
 %{?requires_xorg_xserver_xinput}
